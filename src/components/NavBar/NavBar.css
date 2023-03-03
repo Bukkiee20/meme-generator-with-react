@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    height: 80px;
+    
+}
+
+.logo-div{
+    display: flex;
+    align-items: center;
+}
+
+.logo-div img{
+    height: 60px;
+}
+
+.logo-div h1{
+    font-family: 'Karla', sans-serif;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.logo-text{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 480px){
+    .navbar-container{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        height: 60px;
+    }
+    
+    .logo-div{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .logo-div img{
+        height: 50px;
+    }
+
+    .logo-div h1{
+        font-size: 20px;
+    }
+    
+    .logo-text{
+        display: none;
+    }
+    
+
+}

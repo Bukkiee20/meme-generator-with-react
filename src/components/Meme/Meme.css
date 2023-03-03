@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+
+.meme-container{
+    width: 80%;
+    margin: auto;
+    padding: 3rem;
+    
+}
+
+.form{
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+}
+
+.form-input{
+    border: 1px solid #D5D4D8;
+    text-indent: 5px;
+    font-size: 18px;
+}
+
+.form-button{
+    grid-column: 1 / -1;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+
+.form-input, .form-button{
+    border-radius: 5px;
+    font-family: 'Karla', sans-serif;
+    outline: none;
+}
+
+.meme-img{
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 5px;
+    height: 500px !important;
+   
+}
+
+@media screen and (max-width: 480px){
+    .meme-container{
+       padding: 7rem 0 4rem 0;
+
+     
+    }
+
+    .form{
+        grid-template: 40px 40px / 1fr;
+        gap: 17px;
+    }
+
+    .meme-img{
+        height: 320px !important;
+    }
+
+    .form-input, .form-button{
+        font-size: 16px;
+    }
+
+    .form-button{
+        padding: 0.5rem 0;
+    }
+    
+    
+
+}
